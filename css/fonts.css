@@ -1,0 +1,25 @@
+@font-face {
+    font-family: "OpenSans";
+    font-style: normal;
+    font-weight: 400;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("OpenSans"),
+         /* Если не получилось, загрузит woff */
+         url("/fonts/OpenSans/OpenSans-Regular.woff") format("woff"),
+         /* Если браузер не поддерживает woff, загрузит ttf */
+         url("/fonts/OpenSans/OpenSans-Regular.ttf") format("ttf"),
+         url("/fonts/OpenSans/OpenSans-Regular.eot") format("eot");
+}
+
+@font-face {
+    font-family: "OpenSans";
+    font-style: normal;
+    font-weight: 700;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("OpenSans"),
+         /* Если не получилось, загрузит woff */
+         url("/fonts/OpenSans/OpenSans-Bold.woff") format("woff"),
+         /* Если браузер не поддерживает woff, загрузит ttf */
+         url("/fonts/OpenSans/OpenSans-Bold.ttf") format("ttf"),
+         url("/fonts/OpenSans/OpenSans-Bold.eot") format("eot");
+}

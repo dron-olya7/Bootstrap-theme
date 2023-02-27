@@ -1,0 +1,212 @@
+/* использованы стили документации https://github.com/rtplv/airbnb-css-ru */
+
+
+body {
+    font-family: "Open-Sans", sans-serif;
+    color: #21212c;
+  }
+  
+  h1,
+  h2,
+  h3,
+  p {
+    margin: 0;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* header */
+  .header {
+    padding: 25px 0;
+    background-color: #fff;
+  }
+  
+  .header-logo {
+    margin-right: 64px;
+  }
+  
+  /* переопределение классов бутстрапа */
+  .header-link {
+    color: #4e92f9;
+    text-decoration: none;
+    margin-right: 5px;
+    border-radius: 8px;
+  }
+  
+  .header-sign {
+    box-shadow: 0px 7px 20px rgba(49, 69, 255, 0.13);
+    border-radius: 8px;
+    background: -webkit-linear-gradient(#C381DB, #4E92F9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  /* theme-title */
+  
+  .theme {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 507px;
+    background-image: url(../img/header-bg.svg);
+  }
+  
+  .theme-left {
+    margin-top: 144px;
+  }
+  
+  .theme-title {
+    font-size: 51px;
+    font-weight: 700;
+    background: -webkit-linear-gradient(#C381DB, #4E92F9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 13px;
+  }
+  
+  .theme-title span {
+    font-size: 40px;
+    font-weight: 400;
+    color: #485466;
+  }
+  
+  .theme-subtitle {
+    color: #5A6980;
+    font-size: 15px;
+    margin-bottom: 49px;
+  }
+  
+  .theme-button {
+    background: linear-gradient(112.77deg, #C381DB 0%, #4E92F9 100%);
+    border-radius: 8px;
+    color: #fff;
+  }
+    
+  /* service-item */
+  .service-item {
+    background: radial-gradient(
+      114.42% 114.42% at -2.96% -9.7%,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 0.5) 100%
+    );
+    backdrop-filter: blur(60px);
+    border-radius: 40px;
+    padding: 87px 56px 54px 56px;
+    margin-bottom: 30px;
+    min-height: 526px;
+  }
+  
+  .service-item img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 82px;
+  }
+  
+  .item-title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 23px;
+  }
+  
+  .item-subtitle {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+    color: #5a6980;
+    margin-bottom: 23px;
+  }
+  
+  .item-link {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: #4e92f9;
+    text-decoration: none;
+  }
+  
+  /* media */
+  @media screen and (max-width: 1440px) {
+    .service-item {
+      padding: 45px;
+      min-height: 435px;
+    }
+    .service-item img {
+      margin-bottom: 45px;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .service-item {
+      padding: 45px;
+      min-height: 435px;
+    }
+    .service-item img {
+      margin-bottom: 45px;
+    }
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .col-5{
+        margin-right: 30px;
+    }  
+    .service-item {
+      padding: 45px;
+      min-height: 435px;
+    }
+    .service-item img {
+      margin-bottom: 45px;
+    }
+   
+  }
+  
+  @media screen and (max-width: 425px) {
+    .col-5{
+        margin-right: 30px;
+    }  
+    .service-item {
+      padding: 30px;
+      min-height: 280px;
+    }
+    .service-item img {
+      margin-bottom: 30px;
+      width: 30%;
+    }
+      
+    .item-title {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .item-subtitle {
+      margin-bottom: 10px;
+    }
+  
+    .item-link {
+      font-size: 14px;
+    }
+  }
+  
+  @media screen and (max-width: 320px) {
+    .service-item {
+        padding: 12px;
+        min-height: 100px;
+      }
+      .service-item img {
+        margin-bottom: 30px;
+        width: 50%;
+      }
+    
+      .item-title {
+        font-size: 9px;
+        margin-bottom: 5px;
+      }
+      .item-subtitle {
+        margin-bottom: 5px;
+      }
+    
+      .item-link {
+        font-size: 12px;
+      }
+    }
